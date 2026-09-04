@@ -1,0 +1,424 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.topo {
+    background-color: #111827;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #374151;
+}
+
+.topo .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #d1d5db;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    background-color: #111827;
+    color: white;
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.tag {
+    display: inline-block;
+
+    background-color: #1e3a5f;
+    color: #60a5fa;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    max-width: 700px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero p {
+    font-size: 19px;
+
+    color: #cbd5e1;
+
+    max-width: 600px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   SEÇÕES
+======================================== */
+
+.secao {
+    padding: 90px 0;
+}
+
+.titulo-secao {
+    margin-bottom: 45px;
+}
+
+.titulo-secao > span {
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    font-size: 36px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+.titulo-secao p {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+
+/* ========================================
+   PROFESSOR
+======================================== */
+
+.professor-container {
+    max-width: 500px;
+}
+
+.card-professor {
+    border-left: 5px solid #2563eb;
+}
+
+.card-professor .avatar {
+    background-color: #2563eb;
+    color: white;
+}
+
+.tipo {
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   ÁREA DE ALUNOS
+======================================== */
+
+.alunos {
+    background-color: #eef2f7;
+}
+
+.grid-alunos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card {
+    background-color: white;
+
+    min-height: 150px;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   AVATAR
+======================================== */
+
+.avatar {
+    width: 65px;
+    height: 65px;
+
+    min-width: 65px;
+
+    border-radius: 50%;
+
+    background-color: #dbeafe;
+
+    color: #2563eb;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   INFORMAÇÕES DOS CARDS
+======================================== */
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+}
+
+.numero {
+    font-size: 12px;
+
+    color: #9ca3af;
+
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    color: #111827;
+}
+
+.card-info p {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+.ver-perfil {
+    margin-top: 5px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    background-color: #111827;
+
+    color: #9ca3af;
+
+    padding: 40px 0;
+}
+
+footer .container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #60a5fa;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer span {
+    font-size: 14px;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .grid-alunos {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .topo .container {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .grid-alunos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-secao h2 {
+        font-size: 30px;
+    }
+
+    footer .container {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
