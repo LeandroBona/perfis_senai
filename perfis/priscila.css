@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(92, 119, 131);
+    
+
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    padding: 5%; border-radius: 10px;
+    background-color: rgb(75, 95, 107);
+    
+}
+img{
+    border-radius: 5%;
+    border: 2px; color: aliceblue;
+}
+h2{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+p{
+    color: aliceblue;
+    font-size: 20px;
+
+}
